@@ -1,0 +1,35 @@
+{
+  "name": "invoice-factoring-v2",
+  "version": "1.0.0",
+  "description": "Invoice factoring smart contract for PayMint",
+  "main": "index.js",
+  "scripts": {
+    "test": "clarinet test",
+    "check": "clarinet check",
+    "console": "clarinet console",
+    "devnet:start": "clarinet devnet start",
+    "devnet:stop": "clarinet devnet stop",
+    "devnet:deploy": "clarinet devnet deploy",
+    "testnet:deploy": "clarinet deployments apply --testnet",
+    "integrate": "clarinet integrate",
+    "format": "clarinet format"
+  },
+  "keywords": [
+    "stacks",
+    "clarity",
+    "smart-contract",
+    "invoice-factoring-v2",
+    "defi"
+  ],
+  "author": "PayMint Team",
+  "license": "MIT",
+  "dependencies": {
+    "@stacks/transactions": "^6.0.0",
+    "@stacks/network": "^6.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0"
+  }
+}
+

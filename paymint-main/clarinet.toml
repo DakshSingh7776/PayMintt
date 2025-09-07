@@ -1,0 +1,17 @@
+[project]
+name = "paymint-invoice-factoring"
+description = "Invoice factoring smart contract for PayMint"
+authors = ["PayMint Team"]
+license = "MIT"
+
+[contracts.invoice-factoring]
+path = "contracts/invoice-factoring.clar"
+clarity_version = "2.4"
+
+[networks.testnet4]
+url = "https://api.testnet4.stacks.co"
+deployment_fee_rate = 10
+
+[accounts.deployer]
+mnemonic = "loop stomach vast measure scene idea salmon spawn satisfy crater crane art erase fog sauce access tunnel deal basket utility material cloud shock impose"
+balance = 1000000000000

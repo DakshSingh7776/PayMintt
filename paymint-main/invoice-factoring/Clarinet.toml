@@ -1,0 +1,41 @@
+[project]
+name = "invoice-factoring-v2"
+description = "Invoice factoring smart contract for PayMint"
+authors = ["PayMint Team <team@paymint.app>"]
+license = "MIT"
+
+[contracts.invoice-factoring-v2]
+path = "contracts/invoice-factoring-v2.clar"
+clarity_version = 1
+
+[repl]
+costs = true
+disk_costs = true
+
+[devnet]
+disable_stacks_explorer = false
+disable_stacks_api = false
+working_dir = "devnet"
+deployment_plan_path = "deployments/default.devnet-plan.yaml"
+
+[testnet]
+disable_stacks_explorer = false
+disable_stacks_api = false
+working_dir = "testnet"
+deployment_plan_path = "deployments/default.testnet-plan.yaml"
+
+[networks.testnet4]
+url = "https://api.testnet4.stacks.co"
+deployment_fee_rate = 10
+
+[accounts.deployer]
+mnemonic = "loop stomach vast measure scene idea salmon spawn satisfy crater crane art erase fog sauce access tunnel deal basket utility material cloud shock impose"
+balance = 1000000000000
+
+[accounts.user1]
+mnemonic = "loop stomach vast measure scene idea salmon spawn satisfy crater crane art erase fog sauce access tunnel deal basket utility material cloud shock impose"
+balance = 1000000000000
+
+[accounts.user2]
+mnemonic = "loop stomach vast measure scene idea salmon spawn satisfy crater crane art erase fog sauce access tunnel deal basket utility material cloud shock impose"
+balance = 1000000000000

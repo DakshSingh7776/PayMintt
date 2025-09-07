@@ -1,0 +1,16 @@
+# 🚀 Deploy Command Template
+
+# Replace YOUR_PRIVATE_KEY_HERE with your actual private key from Leather Wallet
+# Example: 0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef
+
+npx @stacks/cli deploy_contract \
+  contracts/invoice-factoring.clar \
+  invoice-factoring \
+  1000 \
+  0 \
+  'YOUR_PRIVATE_KEY_HERE'
+
+# After successful deployment, you'll get a transaction ID
+# Update the contract address in src/hooks/use-smart-contract.ts
+# The new address will be: YOUR_ADDRESS.invoice-factoring
+

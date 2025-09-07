@@ -1,0 +1,7 @@
+# Devnet deployment plan for invoice-factoring-v2 contract
+contracts:
+  invoice-factoring-v2:
+    path: contracts/invoice-factoring-v2.clar
+    deployer: deployer
+    depends_on: []
+

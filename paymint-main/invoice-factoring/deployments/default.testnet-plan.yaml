@@ -1,0 +1,18 @@
+---
+id: 0
+name: Testnet deployment
+network: testnet
+stacks-node: "https://api.testnet.hiro.so"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoind.testnet.stacks.co:18332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: invoice-factoring-v2
+            expected-sender: STM0TT7J971S64YRJWNM387B40G69NS9QM7F59WS
+            cost: 75140
+            path: contracts/invoice-factoring-v2.clar
+            anchor-block-only: true
+            clarity-version: 1
+      epoch: "2.05"
